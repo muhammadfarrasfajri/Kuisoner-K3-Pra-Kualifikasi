@@ -35,6 +35,13 @@
                     </a>
                 <?php endif; ?>
             </li>
+            <li class="nav-item">
+                <?php if ($user['role'] === 'admin'): ?>
+                    <a class="nav-link text-white" href="../page/manage_users.php">
+                        <i class="bi bi-person"></i>Manage Users
+                    </a>
+                <?php endif; ?>
+            </li>
         </ul>
     </div>
 </nav>

@@ -15,12 +15,6 @@ $user = $_SESSION['user'];
             <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton" style="transform: translateX(-20px);">
                 <li>
                     <a href="../controllers/logout.php" class="dropdown-item">Logout</a>
-                </li>
-                <?php if ($user['role'] === 'admin'): ?>
-                    <li>
-                        <a href="../page/manage_users.php" class="dropdown-item">Manage Users</a>
-                    </li>
-                <?php endif; ?>
             </ul>
         </div>
     </div>
