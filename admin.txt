@@ -1,0 +1,20 @@
+<?php
+require 'includes/config.php';
+
+// Password admin pertama
+$adminPassword = password_hash('admin123', PASSWORD_BCRYPT);
+
+// Masukkan admin ke database
+try {
+    $query = "INSERT INTO users (username, password, role) VALUES (:username, :password, :role)";
+    $stmt = $pdo->prepare($query);
+    $stmt->execute([
+        ':username' => 'admin',
+        ':password' => $adminPassword,
+        ':role' => 'admin'
+    ]);
+    echo "Admin berhasil dibuat!";
+} catch (Exception $e) {
+    die("Gagal membuat admin: " . $e->getMessage());
+}
+?>
