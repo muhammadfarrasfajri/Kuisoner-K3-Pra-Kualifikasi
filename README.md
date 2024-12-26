@@ -1,12 +1,12 @@
-## Intro
+# Intro
 Sebuah website kuisoner dengan dua tingkatan user dan admin
 
-## Menu
-# admin
+# Menu
+## admin
 - Dashboard
 - Manage Users
 - Respon Kuisoner
-# user
+## user
 - Dashboard
 - Data Pengguna
 - Kuisoner
