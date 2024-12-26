@@ -1,7 +1,7 @@
 <?php
 try {
     $host = 'localhost';
-    $db = 'csmskp';
+    $db = 'exampel';
     $user = 'root';
     $pass = '';
     $charset = 'utf8mb4';
